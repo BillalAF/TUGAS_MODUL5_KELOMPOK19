@@ -15,16 +15,16 @@ class Buku:
         print(f"Tahun terbit berhasil diubah menjadi: {self.tahun_terbit}")
 
 def tambah_buku(daftar_buku): 
-    judul = input("Masukkan Judul Buku: ")
-    pengarang = input("Masukkan Pengarang Buku: ")
-    tahun = int(input("Masukkan Tahun Terbit Buku: "))
+    judul = input("Masukkan Judul Buku Anda: ")
+    pengarang = input("Masukkan Nama Dari Pengarang Buku: ")
+    tahun = int(input("Masukkan Tahun Terbit Buku Tersebut: "))
     
     buku_baru = Buku(judul, pengarang, tahun)  
     daftar_buku.append(buku_baru)  
 
 def tampilkan_semua_buku(daftar_buku): 
     if not daftar_buku:
-        print("Belum ada buku yang terdaftar.")
+        print("Belum terdapat buku yang terdaftar.")
     else:
         for idx, buku in enumerate(daftar_buku, start=1):
             print(f"\nBuku {idx}:")
@@ -59,11 +59,11 @@ def main():
                 print("\nBuku ditemukan:")
                 hasil_pencarian.tampilkan_info()
             else:
-                print("Buku tidak ditemukan.")
+                print("Buku tersebut tidak ditemukan.")
         elif pilihan == "4":
             print("Terima kasih telah menggunakan sistem perpustakaan!")
             break
         else:
-            print("Pilihan tidak valid, silakan coba lagi.")
+            print("Pilihan tidak valid, silakan mencoba kembali.")
 
 main()
