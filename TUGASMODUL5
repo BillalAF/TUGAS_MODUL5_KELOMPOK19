@@ -24,7 +24,7 @@ def tambah_buku(daftar_buku):
 
 def tampilkan_semua_buku(daftar_buku): 
     if not daftar_buku:
-        print("Belum ada buku yang terdaftar.")
+        print("tidak terdapat buku yang terdaftar.")
     else:
         for idx, buku in enumerate(daftar_buku, start=1):
             print(f"\nBuku {idx}:")
@@ -64,6 +64,6 @@ def main():
             print("Terima kasih telah menggunakan sistem perpustakaan!")
             break
         else:
-            print("Pilihan tidak valid, silakan coba lagi.")
+            print("Pilihan anda tidak valid, silakan mencoba kembali.")
 
 main()
